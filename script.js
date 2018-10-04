@@ -12,11 +12,24 @@ function full_name(x, y) {
     return z;
 }
 
-var name = full_name(first_name,last_name);
-console.log(name);
+var firstLastName = full_name(first_name, last_name);
+
+console.log(firstLastName);
+
 //Create a function called last_first that takes first_name and last_name as parameters and returns "last comma space last". For example, "Ali" and "Karbassi" should return "Karbassi, Ali". Then call full_name, save it in a variable and output the variable to the console.
+function last_first(x, y) {
+    let z = y + ", " + x;
+    return z;
+}
+
+var lastFirstName = last_first(first_name, last_name);
+
+console.log(lastFirstName);
 
 //Prompt the user once for their age and save their answer to the variable age. Convert their age to an integer.
+var age = prompt("Enter your current age.");
+age = parseInt(age);
+//console.log(age);
 
 //Create a function called over18 that takes age as it's only parameter. This function should return true or false if the age passed in is 18 or older. For example, age(17) returns false, age(18) returns true, and age(999) returns true. Return false if age is not a number. Hint: Google isNan().
 
