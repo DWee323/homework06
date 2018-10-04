@@ -33,6 +33,27 @@ age = parseInt(age);
 
 //Create a function called over18 that takes age as it's only parameter. This function should return true or false if the age passed in is 18 or older. For example, age(17) returns false, age(18) returns true, and age(999) returns true. Return false if age is not a number. Hint: Google isNan().
 
+/*
+if (DRINKING_AGE < age) {
+    console.log("Can drink!");
+} else if (DRINKING_AGE === age){ //==여도 되지만, 더 확실히 하기위해 === 사용
+    console.log("Welcome to the world of drinking!");
+} else {
+    console.log("Too young to drink!");
+}
+*/
+
+function over18(x) {
+    if (isNaN(x)) {
+    return 'Not a Number!';
+    }
+    let z = (x >= 18);
+    return z;
+}
+
+var ageTruth = over18(age);
+//console.log(ageTruth);
+
 //Create a function called to_celcius that takes a float parameter for degree Fahrenhet and converts it to Celcius. For example, to_celcius(32) will return 0. Be sure to test it.
 
 //Create a function called to_fahrenhet that takes a float parameter for degree Celcius and converts it to Fahrenhet. For example, to_fahrenhet(32) will return 89.6. Be sure to test it.
