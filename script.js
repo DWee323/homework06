@@ -43,7 +43,8 @@ function to_celcius(x) {
     return c;
 }
 
-//below was not asked in the assignment prompt, but for interactive testing I put it there. One other way that I could've tested is: type in console.log(to_celcius(32)); then check the console if the value is zero.
+//below was not asked in the assignment prompt, but for interactive testing I put it there. 
+//One other way that I could've tested is: type in console.log(to_celcius(32)); then check the console if the value is zero.
 var fInput = prompt("Enter a Farenheit value of temparature you want to convert to Celcius.");
 fInput = parseFloat(fInput);
 
