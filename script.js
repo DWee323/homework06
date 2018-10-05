@@ -22,7 +22,7 @@ console.log(lastFirstName);
 
 
 var age = prompt("Enter your current age.");
-age = parseInt(age);
+age = parseInt(age, 10);
 
 
 function over18(x) {
